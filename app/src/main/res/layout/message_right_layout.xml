@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top">
+
+    <RelativeLayout
+        android:id="@+id/messageRLayout_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/message_white_background"
+                android:elevation="1dp"
+                android:foregroundGravity="right"
+                android:gravity="right|end"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/timeView_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/messageTextView_r"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2dp"
+                    android:text="TextView"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/messageImageFileRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_alignEnd="@+id/messageTextView_r"
+                    android:layout_below="@+id/messageTextView_r"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="2dp"
+                    android:maxHeight="300dp"
+                    android:maxWidth="220dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center"
+                    android:gravity="center|fill"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/messageTextView_r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:autoLink="web|phone"
+                        android:linksClickable="true"
+                        android:maxWidth="220dp"
+                        android:text="TextView"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textColorLink="@color/colorPrimary"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/messageImage"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/seenBadge"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="false"
+                android:layout_alignTop="@+id/messageTextView_r"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toStartOf="@+id/messageTextView_r"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+                app:srcCompat="@drawable/purple_circle" />
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

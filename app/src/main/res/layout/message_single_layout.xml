@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top">
+
+    <RelativeLayout
+        android:id="@+id/messageRLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/timeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/messageTextView"
+                android:layout_alignParentTop="false"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="8dp"
+                android:paddingStart="10dp"
+                android:text="TextView"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout4" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/messageImage"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:elevation="2dp"
+                android:src="@drawable/default_profile"
+                app:civ_border_color="@color/cardview_light_background"
+                app:civ_border_width="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/message_purple_background"
+                android:elevation="1dp"
+                android:gravity="start"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/messageImageFileLeft"
+                    android:layout_width="220dp"
+                    android:layout_height="350dp"
+                    android:layout_alignStart="@+id/messageTextView"
+                    android:layout_below="@+id/messageTextView"
+                    android:layout_marginTop="10dp"
+                    android:maxHeight="300dp"
+                    android:maxWidth="220dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/messageTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerVertical="false"
+                    android:autoLink="web"
+                    android:elevation="1dp"
+                    android:linksClickable="true"
+                    android:maxWidth="220dp"
+                    android:padding="10dp"
+                    android:paddingStart="20dp"
+                    android:text="TextView"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/messageImage"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

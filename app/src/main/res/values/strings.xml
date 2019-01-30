@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Symbol</string>
+    <string name="auth_hello_message">Welcome to Symbol Messenger</string>
+    <string name="register_button">Create an account</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="display_name_hint">Nickname</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="first_name_hint">First name</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="empty_field_error">Field can not be empty!</string>
+    <string name="wrong_email_error">Wrong email!</string>
+    <string name="wrong_name_error">Name can only contain letters!</string>
+    <string name="wrong_password_error">Password can only contain numbers and latin symbols!</string>
+    <string name="main_action_bar_title">Symbol</string>
+
+    <string name="register_text_view">Create a New Account</string>
+    <string name="sign_in_text_view">Sign In</string>
+
+    <!-- main menu strings-->
+    <string name="log_out">Log out</string>
+    <string name="action_settings">Account settings</string>
+    <string name="action_all_users">All users</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="status_default">Roses are red, violets are blue</string>
+    <string name="nickname_default">Display name</string>
+    <string name="change_profile_button">Change profile</string>
+    <string name="first_name_view">First name:</string>
+    <string name="last_name_view">Last name:</string>
+
+    <!-- Profile activity strings (should've done this way before)-->
+    <string name="profile_toolbar_title">Profile settings</string>
+
+    <!-- Settings activity strings-->
+    <string name="settings_toolbar_title">Account settings</string>
+    <string name="save_button">Save</string>
+    <string name="dialog_nickname_title">Change your nickname</string>
+    <string name="dialog_status_title">Change your status</string>
+    <string name="nickname_dialog_hint">New nickname</string>
+    <string name="status_dialog_hint">New status</string>
+
+    <!-- all users activity strings-->
+    <string name="all_users_toolbar_title">All users</string>
+    <string name="profile_subscribe_button">Subscribe</string>
+
+    <!-- chat fragment strings -->
+    <string name="chat_fragment_welcome_text">
+        Push that big purple button to create a group and start chatting</string>
+    <string name="group_name_edit_text">Enter group name</string>
+    <string name="group_description_edit_text">Add a little description of your group</string>
+    <string name="group_dialog_title">Create a new group</string>
+    <string name="create_group_cancel_button">Cancel</string>
+    <string name="group_list_text_view">Group name</string>
+
+    <!-- group profile strings -->
+    <string name="required_text">required*</string>
+    <string name="group_name_hint">Group name</string>
+    <string name="create_group_button">Create group</string>
+
+    <!-- chat list strings -->
+    <string name="chat_list_welcome_text">
+        Push that big purple button to choose who you wanna chat with
+    </string>
+</resources>
